@@ -1,0 +1,41 @@
+WriteToFileHostedService2: Process Started
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:36:31
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:36:38
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:36:45
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:36:52
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:36:59
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:06
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:13
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:20
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:27
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:34
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:41
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:48
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:37:55
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:02
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:09
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:16
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:23
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:30
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:37
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:44
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:51
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:38:58
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:39:05
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:39:12
+WriteToFileHostedService2: Doing some work at 25-11-2018 10:39:19
+WriteToFileHostedService2: Process Stopped
+WriteToFileHostedService2: Process Started
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:01:10
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:01:17
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:02:06
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:02:06
+WriteToFileHostedService2: Process Started
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:03:13
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:03:20
+WriteToFileHostedService2: Process Started
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:04:36
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:04:43
+WriteToFileHostedService2: Process Started
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:05:54
+WriteToFileHostedService2: Doing some work at 28/11/2021 11:06:01

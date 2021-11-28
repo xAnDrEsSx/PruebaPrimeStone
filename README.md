@@ -1,2 +1,0 @@
-# PruebaPrimeStone
- PruebaPrimeStone

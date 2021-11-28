@@ -1,0 +1,16 @@
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\log4net.config
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\Common.deps.json
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\Common.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\ref\Common.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\Common.pdb
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\Test.Domain.Administration.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\bin\Debug\net5.0\Test.Domain.Administration.pdb
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.csprojAssemblyReference.cache
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.csproj.CopyComplete
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\ref\Common.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Common\obj\Debug\net5.0\Common.pdb
