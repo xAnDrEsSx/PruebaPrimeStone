@@ -1,0 +1,138 @@
+﻿@model Test.Web.Helpers.Course.CourseVM
+@{
+    ViewData["Title"] = "Course Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Registro de Cursos</h1>
+    <p></p>
+
+    <form autocomplete="off" class="needs-validation" id="FormApp">
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.Id, new { @class = "form-control input-govco", @hidden = "true" })
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Name)
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control input-govco", @placeholder = "#", @required = "required" })
+                    @Html.ValidationMessageFor(m => m.Name)
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Hours)
+                    @Html.TextBoxFor(m => m.Hours, new { @class = "form-control input-govco", @placeholder = "#", @required = "required" })
+                    @Html.ValidationMessageFor(m => m.Hours)
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.StartDate)
+                    @Html.TextBoxFor(m => m.StartDate, "{0:yyyy/MM/dd}", new { @class = "form-control input-govco", @placeholder = "Nombre Estudiante", @required = "required" })
+
+                    @*@Html.TextBoxFor(m => m.StartDate, "{0:yyyy/MM/dd}", new
+                        {
+                            @onchange = "validFecha()",
+                            @placeholder = "Ej: aaaa/mm/dd"
+                        })*@
+
+
+                    @Html.ValidationMessageFor(m => m.StartDate)
+                </div>
+
+            </div>
+        </div>
+        <hr />
+
+
+        <div class="row my-5">
+            <div class="col-md-12 text-center">
+
+
+                <a id="save" class="btn btn-round btn-high btn-long" style="background-color: #343a40;color:white"
+                   href="javascript:estaSeguroCrear()">
+                    GUARDAR
+                </a>
+
+                @*<a id="update" hidden class="btn btn-round btn-high btn-long" style="background-color: #343a40;color:white"
+                   href="javascript:actualizarEstudiante()">
+                    ACTUALIZAR
+                </a>*@
+
+                <a id="limpiar" class="btn btn-round btn-high btn-long" style="background-color: #343a40;color:white"
+                   href="javascript:limpiar()">
+                    LIMPIAR
+                </a>
+
+
+            </div>
+        </div>
+
+
+
+    </form>
+
+
+    <hr />
+
+    @if (Model.CourseAM != null)
+    {
+        if (Model.CourseAM.Count() > 0)
+        {
+            <br /> <h1 class="display-4">Cursos Creados</h1>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Horas</th>
+                        <th scope="col">Fecha Inicio</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model.CourseAM.OrderByDescending(x => x.Id))
+                    {
+                        <tr>
+                            <th scope="row"> @item.Id </th>
+                            <td> @item.Name </td>
+                            <td> @item.Hours </td>
+                            <td> @item.StartDate.ToString("yyyy/MM/dd") </td>
+                            <td>
+                                <a id="update" class="btn btn-round btn-high btn-long" style="background-color: #343a40;color:white;"
+                                   href="javascript:estaSeguroBorrar(@item.Id)">
+                                    Borrar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <hr />
+        }
+    }
+
+
+
+</div>
+
+
+<script src="~/js/Course/Curso.js"></script>

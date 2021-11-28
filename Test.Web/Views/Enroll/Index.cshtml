@@ -1,0 +1,192 @@
+﻿@model Test.Web.Helpers.EnrollVM
+@{
+    ViewData["Title"] = "Enroll Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Matriculas</h1>
+    <p></p>
+
+    <form autocomplete="off" class="needs-validation" id="FormApp">
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.StudentAM.Id, new { id = "IdStudent", @class = "form-control input-govco", @hidden = "true" })
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        @if (Model.Consult)
+                        {
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.StudentAM.DocumentNumber)
+                                @Html.TextBoxFor(m => m.StudentAM.DocumentNumber, new { id = "DocumentNumber", @class = "form-control input-govco", @placeholder = "#", @required = "required", onclick = "reset", disabled = "disabled" })
+                                @Html.ValidationMessageFor(m => m.StudentAM.DocumentNumber)
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.StudentAM.DocumentNumber)
+                                @Html.TextBoxFor(m => m.StudentAM.DocumentNumber, new { id = "DocumentNumber", @class = "form-control input-govco", @placeholder = "#", @required = "required", onclick = "reset" })
+                                @Html.ValidationMessageFor(m => m.StudentAM.DocumentNumber)
+                            </div>
+                        }
+
+
+                    </div>
+                    <div class="col-md-3">
+                        <br />
+                        <a id="validar" class="btn btn-round btn-high btn-long" style="background-color: #343a40;color:white"
+                           href="javascript:buscarEstudiante()">
+                            Consultar
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        @if (Model.Consult)
+        {
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.StudentAM.Name)
+                        @Html.TextBoxFor(m => m.StudentAM.Name, new { id = "Name", @class = "form-control input-govco", @placeholder = "Nombre Estudiante", @required = "required", disabled = "disabled" })
+                        @Html.ValidationMessageFor(m => m.StudentAM.Name)
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.StudentAM.LastName)
+                        @Html.TextBoxFor(m => m.StudentAM.LastName, new { id = "LastName", @class = "form-control input-govco", @placeholder = "Apellido Estudiante", @required = "required", disabled = "disabled" })
+                        @Html.ValidationMessageFor(m => m.StudentAM.LastName)
+                    </div>
+                </div>
+            </div>
+
+        }
+        else
+        {
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.StudentAM.Name, new { @hidden = "true" })
+                        @Html.TextBoxFor(m => m.StudentAM.Name, new { id = "Name", @class = "form-control input-govco", @placeholder = "Nombre Estudiante", @required = "required", disabled = "disabled", hidden = "true" })
+                        @Html.ValidationMessageFor(m => m.StudentAM.Name)
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.StudentAM.LastName, new { @hidden = "true" })
+                        @Html.TextBoxFor(m => m.StudentAM.LastName, new { id = "LastName", @class = "form-control input-govco", @placeholder = "Apellido Estudiante", @required = "required", disabled = "disabled", hidden = "true" })
+                        @Html.ValidationMessageFor(m => m.StudentAM.LastName)
+                    </div>
+                </div>
+            </div>
+
+        }
+        <hr />
+
+
+        <div class="row my-5">
+            <div class="col-md-12 text-center">
+
+
+                @if (Model.Consult)
+                {
+                    <a id="limpiar" class="btn btn-round btn-high btn-long" style="background-color: #343a40;color:white"
+                       href="Index">
+                        LIMPIAR
+                    </a>
+                }
+
+            </div>
+        </div>
+
+
+    </form>
+
+
+    <hr />
+
+    @if (Model.ListCourses != null && Model.Consult)
+    {
+        if (Model.ListCourses.Count() > 0)
+        {
+
+            <br />
+
+            <h1 class="display-4">Cursos Disponibles</h1>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">NombreCurso</th>
+                        <th scope="col">Horas</th>
+                        <th scope="col">FechaIni</th>
+                        <th scope="col">Matriculado</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model.ListCourses)
+                    {
+                        <tr>
+                            <th scope="row"> @item.Id </th>
+                            <td> @item.Name </td>
+                            <td> @item.Hours </td>
+                            <td> @item.StartDate.ToString("yyyy/MM/dd") </td>
+                            <td> @item.Enrolled </td>
+                            <td>
+
+                                @if (@item.Enrolled.Equals("N"))
+                                {
+                                    <a id="update" class="btn btn-round btn-high btn-long" style="background-color: #00c790;color:white;"
+                                       href="javascript:Matricular(@item.Id)">
+                                        Matricular
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a id="update" class="btn btn-round btn-high btn-long" style="background-color: #ffb2aa;color:white;"
+                                       href="javascript:CancelarMatricula(@item.Id)">
+                                        Cancelar Matricular
+                                    </a>
+                                }
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <hr />
+        }
+        else
+        {
+            <h1>No Hay Cursos Disponibles</h1>
+        }
+    }
+
+
+</div>
+
+
+<script src="~/js/Enroll/Enroll.js"></script>
