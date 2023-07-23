@@ -1,0 +1,16 @@
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\log4net.config
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\Test.Domain.Administration.deps.json
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\Test.Domain.Administration.runtimeconfig.json
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\Test.Domain.Administration.runtimeconfig.dev.json
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\Test.Domain.Administration.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\ref\Test.Domain.Administration.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\bin\Debug\net5.0\Test.Domain.Administration.pdb
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.csprojAssemblyReference.cache
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.AssemblyInfoInputs.cache
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.AssemblyInfo.cs
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.csproj.CoreCompileInputs.cache
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\ref\Test.Domain.Administration.dll
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.pdb
+C:\Users\Familia Medina Yaima\Desktop\Prueba\Common\Test.Domain.Administration\obj\Debug\net5.0\Test.Domain.Administration.genruntimeconfig.cache
